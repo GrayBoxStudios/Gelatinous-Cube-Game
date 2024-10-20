@@ -23,10 +23,14 @@ public class PlayerMovement : MonoBehaviour
     Vector3 destinationRotation;
     Vector2 movementInput;
 
+    AudioInstancer m_audioInstancer;
+
     public void Awake()
     {
         m_controls = new Controls();
         m_controls.Enable();
+
+        m_audioInstancer = GetComponent<AudioInstancer>();
 
         destinationPosition = new Vector3();
         destinationRotation = new Vector3();
@@ -55,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
         if (movementInput != Vector2.zero && timer <= 0f)
         {
             if (!VerifyMove(movementInput)) return;
+
+            m_audioInstancer.CreateAudio();
 
             destinationRotation = Vector3.zero;
             CubeVisual.transform.rotation = Quaternion.identity;

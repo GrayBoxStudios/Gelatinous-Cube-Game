@@ -150,7 +150,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 857b5192e3a407f4d93caec244a0ac24, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b834fd913b0ad8948ae4ef38683a1f5f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -496,6 +496,29 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!1 &1065136451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1204810554804557643, guid: 93f678e9721368a41a45d5c5a43a4eb6, type: 3}
+  m_PrefabInstance: {fileID: 1204810553071686180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1065136458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065136451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b22ca37988bf7c42b8de60eacd60e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioToInstances:
+  - {fileID: 8608784092179771256, guid: 3c9bc98a976f47c40a9fb9bc0158bd3a, type: 3}
+  - {fileID: 922924164058226535, guid: d0b3ee62c98f9fb4f8fdced2e2180a8a, type: 3}
+  - {fileID: 5782099339081413957, guid: 1f57836fc5f184043aa7d36033f41200, type: 3}
+  - {fileID: 8391344412744514773, guid: 9a693d8bf55052140b3cd7cc2f527350, type: 3}
+  - {fileID: 8435952777016041482, guid: 5165e00411917f342b28046fe1a8d05f, type: 3}
 --- !u!1 &1405302316
 GameObject:
   m_ObjectHideFlags: 0
